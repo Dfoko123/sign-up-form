@@ -1,0 +1,36 @@
+
+body{
+    background-color: black;
+    opacity: 0,7;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.container{
+    background-image: url(halie-west-25xggax4bSA-unsplash\ \(2\).jpg);
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;  
+    background-position: center;
+}
+.container div:last-child{
+    background-color: white;
+    width:35em;
+    height: 100vh;
+    padding-top: 2px;
+    right: 0;
+    
+}
+img{
+    width: 20px;
+}
+.container>div p{
+    display: inline-block;
+}
+.container>div:first-child{
+    background-color: black;
+    opacity: 0.3;
+    height: 30px;
+}
