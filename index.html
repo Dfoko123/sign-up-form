@@ -8,12 +8,14 @@
 </head>
 <body>
     <div class="container">
-        <div>
-            <img src="odin-lined.png" alt="">
-            <p>ODIN</p>
-        </div>
-        <div>
+        <div id="odin">
             <div>
+                <img src="odin-lined.png" alt="">
+                <p>ODIN</p>
+            </div>
+        </div>
+        <div id="formulaire">
+            <div class="first">
                 <p>
                     This is not a real online service! You know you need something <br>
                     lihe this in your life to help you realize your deepest dreams.<br>
@@ -23,9 +25,10 @@
                     You know what you want to.
                 </p>
             </div>
-            <div>
-                <h2>Let's do this!</h2>
-                <form action="">
+            <div class="second">
+                <h3>Let's do this!</h3>
+
+                <form action="" id="subcription">
                     <div>
                         <label for="first_name">FIRST NAME</label>
                         <input type="text" id="first_name" name="user_first_name">
@@ -44,17 +47,21 @@
                     </div>
                     <div>
                         <label for="psw">PASSWORD</label>
-                        <input type="password" id="psw" name="user_password">
+                        <input type="password" id="psw" name="user_password" required>
                     </div>
                     <div>
                         <label for="copsw">CONFIRM PASSWORD</label>
-                        <input type="password" id="copsw" name="user_confirm_password">
+                        <input type="password" id="copsw" name="user_confirm_password" required>
                     </div>
                     
                 </form>
+                
             </div>
-            <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="">Log in</a></p>
+            <div class="thirth">
+                <button type="submit" form="subcription">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+            
         </div>
     </div>
 </body>

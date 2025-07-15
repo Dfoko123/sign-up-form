@@ -1,4 +1,19 @@
-
+@font-face{
+    font-family: "Norse";
+    src:url("Norse-Bold.otf")
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
 body{
     background-color: black;
     opacity: 0,7;
@@ -8,29 +23,105 @@ body{
 }
 .container{
     background-image: url(halie-west-25xggax4bSA-unsplash\ \(2\).jpg);
-    width: 50vw;
+    width: 57vw;
     height: 100vh;
     display: flex;
     flex-direction: row;  
     justify-content: space-between;  
     background-position: center;
+    position: relative;
 }
-.container div:last-child{
+#formulaire{
     background-color: white;
-    width:35em;
-    height: 100vh;
-    padding-top: 2px;
-    right: 0;
-    
+    width:42em;
+    position: absolute;
+    top: 0;
+    bottom: 0;   
+    right: 0; 
 }
 img{
-    width: 20px;
+    width: 50px;
 }
-.container>div p{
+#odin p{
     display: inline-block;
+    color:white;
+    font-size: 5em;
+    font-family: "Norse";
+    font-weight: 700;
+    
 }
-.container>div:first-child{
+#odin>div{
+    margin-left: 130px;
+}
+#odin{
     background-color: black;
-    opacity: 0.3;
-    height: 30px;
+    opacity: 0.6;
+    height: 115px;
+    width: 100%;
+    margin-top: 12em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+form{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+input{
+    width: 12em;
+    margin-right: 35px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    height: 25px;
+    
+}
+
+input[type="password"]:invalid{
+    border: 1px solid red;
+}
+input:focus{
+    outline: none;
+    box-shadow: 0px 0px 2px black;
+    border: 0.5px solid blue;
+}
+label{
+    display: block;
+    font-size: 0.8em;
+}
+#formulaire .first{
+    height: 40%;
+    padding-top: 145px;
+    padding-left: 50px;
+    font-size: 1.3em;
+    font-weight: 550;
+    opacity: 0.78;
+}
+#formulaire .first p:last-of-type{
+    margin-top: 15px;
+}
+#formulaire .second{
+    background-color:lavender;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 6px rgb(0,0,0);
+
+}
+#formulaire .thirth{
+    margin: 35px;
+}
+.thirth p{
+    margin-top: 25px;
+}
+button{
+    height: 35px;
+    width: 12em;
+    background-color: #596D48;
+    border-radius: 5px;
+    border: none;
+
 }
